@@ -9,6 +9,7 @@ return function()
 	for _, Plr in next, workspace:GetDescendants() do
 	    if Plr:IsA("Humanoid") then
             if Plr.Parent ~= LocalPlayer.Character then
+                local Player = Plr.Parent
                 local playerCharacter = Plr.Parent
                 if playerCharacter then
                     local playerHumanoid = playerCharacter:FindFirstChild("HumanoidRootPart")
